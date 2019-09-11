@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Story = (prop) => {
   return (
-    <div></div>
+    <div className="Story__Container">Hello</div>
   )
 }
 
