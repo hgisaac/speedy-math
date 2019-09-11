@@ -14,6 +14,8 @@ const getComparator = (num) => {
         case 3:
             comparator = ">"
             break;
+        default:
+            comparator = "x"
     }
     return comparator;
 }

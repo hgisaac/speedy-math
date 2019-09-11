@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Quiz from './../Quiz'
 import Categories from './../Categories';
 import './App.css';
@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Router>     
+        <Router>
             <Switch>
               <Route path={"/"} exact component={Categories} />
               <Route path={"/add"} render={(props) => <Quiz {...props} operator="+" />} />

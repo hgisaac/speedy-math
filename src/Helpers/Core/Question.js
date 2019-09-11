@@ -37,6 +37,8 @@ const getCorrectAnswer = (operator, nums) => {
             const quotient = ~~(nums[0] / nums[1]);
             correctAnswer = `${quotient} Quotient and ${remainder} remainder`
             break;
+        default:
+            correctAnswer = console.log("Correct answer not found")
     }
     return correctAnswer
 }
