@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
-import Header from './../Header'
+import Header from './../Header';
+import Story from './../Story/Story';
 import { Link } from "react-router-dom";
-import CategoriesData from './../../Data/Categories'
-import './Categories.css'
+import CategoriesData from './../../Data/Categories';
+import './Categories.css';
 
 class Categories extends Component {
     render() {
         return (
             <div className="Categories__Wrapper">
                 <Header />
+                <Story />
                 <ul className="Categories">
                     {
                         CategoriesData.map((category, i) => {
