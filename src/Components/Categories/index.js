@@ -10,7 +10,7 @@ class Categories extends Component {
         return (
             <div className="Categories__Wrapper">
                 <Header />
-                <Story />
+                <Story onboard/>
                 <ul className="Categories">
                     {
                         CategoriesData.map((category, i) => {
