@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './../Header';
+import Story from './../Story/Story';
 import Puzzle from './../Puzzle';
 import QuestionData from './../../Helpers/Core/QuestionData';
 import './Quiz.css';
@@ -72,6 +73,7 @@ class Quiz extends Component {
         return (
             <div className="App">
                 <Header showBackButton/>
+                <Story storyState={this.props.operator}/>
                 <div className="PuzzleContainer">
                     <div className="Results">
                         <div className="Results__Correct">
