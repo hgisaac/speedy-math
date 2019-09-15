@@ -16,10 +16,10 @@ const Categories = [
         text: "Comparison",
         uri: "/comparison"
     },
-    // {
-    //     text: "Division",
-    //     uri: "/division"
-    // }
+    {
+       text: "Division",
+       uri: "/division"
+    }
 ]
 
 export default Categories
