@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './../Header';
 import Story from './../Story/Story';
 import Puzzle from './../Puzzle';
+import Achievements from './../Achievements/Achievements';
 import QuestionData from './../../Helpers/Core/QuestionData';
 import './Quiz.css';
 
@@ -76,6 +77,7 @@ class Quiz extends Component {
                 <Story storyState={this.props.operator}/>
                 <div className="PuzzleContainer">
                     <div className="Results">
+                        <Achievements achieve/>
                         <div className="Results__Correct">
                             <span className="Results__Symbol--Correct">&#10004;</span>
                             <span className="Results__Count">{this.state.rightAnswers}</span>
