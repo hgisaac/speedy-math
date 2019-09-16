@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import StoryText from './Story.json';
+import './Story.css';
 
 const Story = (prop) => {
   function handleStory() {
@@ -15,8 +16,11 @@ const Story = (prop) => {
       case "x":
         story = StoryText.multiStory
         break;
-      case "___":
+      case "/":
         story = StoryText.divStory
+        break;
+      case "___":
+        story = StoryText.compStory
         break;
       default:
         story = StoryText.onboard
