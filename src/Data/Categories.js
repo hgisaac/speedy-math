@@ -13,12 +13,12 @@ const Categories = [
         uri: "/multiply"
     },
     {
-        text: "Comparison",
-        uri: "/comparison"
-    },
-    {
        text: "Division",
        uri: "/division"
+    },
+    {
+        text: "Comparison",
+        uri: "/comparison"
     }
 ]
 
