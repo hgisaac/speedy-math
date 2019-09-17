@@ -77,7 +77,7 @@ class Quiz extends Component {
                 <Story storyState={this.props.operator}/>
                 <div className="PuzzleContainer">
                     <div className="Results">
-                        <Achievements achieve/>
+                        <Achievements operator={this.props.operator} rightAnswers={this.state.rightAnswers}/>
                         <div className="Results__Correct">
                             <span className="Results__Symbol--Correct">&#10004;</span>
                             <span className="Results__Count">{this.state.rightAnswers}</span>
