@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import StoryText from './Story.json';
+import StoryText from './StoryText.json';
 import './Story.css';
 
 const Story = (prop) => {
