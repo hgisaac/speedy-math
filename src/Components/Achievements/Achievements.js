@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import AchievementsText from './AchievementsTexts.json';
+import './Achievements.css';
 
 const Achievements = (prop) => {
   function handleAchieve() {
