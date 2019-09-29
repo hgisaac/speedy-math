@@ -6,7 +6,6 @@ import Achievements from './../Achievements/Achievements';
 import QuestionData from './../../Helpers/Core/QuestionData';
 import './Quiz.css';
 
-
 let debounceCheck = 0;
 
 function debounce(duration) {
@@ -93,6 +92,12 @@ class Quiz extends Component {
                     {/* <button className="Next_btn Wood" onClick={this.handleClick}>
                         Next >>
                     </button> */}
+                    { this.state.rightAnswers === 10 && (
+                        <div className="Complete">
+                            <h1>Congratulations!</h1>
+                            <a href="https://facebook.com/">Share on Facebook</a>
+                        </div>
+                    ) }
                 </div>
             </div>
         );
