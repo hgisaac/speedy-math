@@ -92,10 +92,11 @@ class Quiz extends Component {
                     {/* <button className="Next_btn Wood" onClick={this.handleClick}>
                         Next >>
                     </button> */}
-                    { this.state.rightAnswers === 10 && (
+                    { this.state.rightAnswers === 1 && (
+                        <Header showBackButton />,
                         <div className="Complete">
                             <h1>Congratulations!</h1>
-                            <a href="https://facebook.com/">Share on Facebook</a>
+                            <a target="_blank" href="https://facebook.com/">Share on Facebook</a>
                         </div>
                     ) }
                 </div>
