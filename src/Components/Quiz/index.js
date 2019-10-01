@@ -92,7 +92,7 @@ class Quiz extends Component {
                     {/* <button className="Next_btn Wood" onClick={this.handleClick}>
                         Next >>
                     </button> */}
-                    { this.state.rightAnswers === 1 && (
+                    { this.state.rightAnswers === 10 && (
                         <Header showBackButton />,
                         <div className="Complete">
                             <h1>Congratulations!</h1>
