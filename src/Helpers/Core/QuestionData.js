@@ -4,15 +4,14 @@ import Number from './../Number';
 const getLevelName = (num) => {
     let level
     switch (num) {
-        case 1:
-            level = "single"
-            break;
         case 2:
             level = "double"
             break;
         case 3:
             level = "triple"
             break;
+        default:
+            level = "single"
     }
     return level
 }

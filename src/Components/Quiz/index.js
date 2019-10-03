@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import Header from './../Header';
+import Story from './../Story/Story';
 import Puzzle from './../Puzzle';
+import Achievements from './../Achievements/Achievements';
 import QuestionData from './../../Helpers/Core/QuestionData';
 import './Quiz.css';
-
 
 let debounceCheck = 0;
 
@@ -73,8 +73,10 @@ class Quiz extends Component {
         return (
             <div className="App">
                 <Header showBackButton/>
+                <Story storyState={this.props.operator}/>
                 <div className="PuzzleContainer">
                     <div className="Results">
+                        <Achievements operator={this.props.operator} rightAnswers={this.state.rightAnswers}/>
                         <div className="Results__Correct">
                             <span className="Results__Symbol--Correct">&#10004;</span>
                             <span className="Results__Count">{this.state.rightAnswers}</span>
@@ -90,6 +92,13 @@ class Quiz extends Component {
                     {/* <button className="Next_btn Wood" onClick={this.handleClick}>
                         Next >>
                     </button> */}
+                    { this.state.rightAnswers === 10 && (
+                        <Header showBackButton />,
+                        <div className="Complete">
+                            <h1>Congratulations!</h1>
+                            <a target="_blank" href="https://facebook.com/">Share on Facebook</a>
+                        </div>
+                    ) }
                 </div>
             </div>
         );
