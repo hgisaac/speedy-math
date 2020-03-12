@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "PUBLIC_URL=. react-scripts build",
+    "build": "react-scripts build",
     "postbuild": "node ./scripts/copy.js && node ./scripts/delete.js && ./node_modules/.bin/workbox injectManifest",
     "release": "npm run build && git checkout gh-pages && sh ./build.sh",
     "test": "react-scripts test --env=jsdom",
