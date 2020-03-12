@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "ideapool-be650"
+  },
+  "targets": {
+    "ideapool-be650": {
+      "hosting": {
+        "speedy-math": [
+          "speedy-math-cloud"
+        ]
+      }
+    }
   }
 }
