@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "target": "speedy-math",
     "public": "build",
     "ignore": [
       "firebase.json",
